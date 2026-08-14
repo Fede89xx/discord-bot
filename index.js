@@ -19,7 +19,7 @@ client.once("ready", () => {
 
 client.on("guildMemberAdd", async (member) => {
 
-    const canal = member.guild.channels.cache.get("1533052976988688476");
+    const canal = member.guild.channels.cache.get("1537966672839970836");
 
     if (!canal) return;
 
