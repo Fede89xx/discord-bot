@@ -52,3 +52,14 @@ Nos alegra que formes parte de **ELITE EXPRESS**.
 });
 
 client.login(process.env.TOKEN);
+
+const http = require("http");
+
+const PORT = process.env.PORT || 3000;
+
+http.createServer((req, res) => {
+    res.writeHead(200, { "Content-Type": "text/plain" });
+    res.end("Bot online");
+}).listen(PORT, () => {
+    console.log(`Servidor web escuchando en el puerto ${PORT}`);
+});
